@@ -1,4 +1,13 @@
-def add(a):
-    return (a-1)%9 + 1 if a>0 else 0
-a=int(input())
-print(add(a))
+import math as m
+def add(n):
+    d=0
+    while(n!=0):
+        d=d+n%10
+        n=n//10
+    return d
+n=int(input())
+t=m.ceil(m.log10(n))
+while(t!=1):
+    n=add(n)
+    t=m.ceil(m.log10(n))
+print(n)
