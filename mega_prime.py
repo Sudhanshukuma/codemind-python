@@ -21,4 +21,3 @@ if(k==1):
     print("Not Mega Prime")
 else:
     print("Mega Prime")
-        
